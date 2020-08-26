@@ -70,6 +70,8 @@
       </div>
     </footer>
 
+    {{-- asset generates a complete url for our file, by default it takes our ip and the file route
+    http://127.0.01:8000/js/nav.js, looking for the file in our public directory. We can change it in our .env with ASSET_URL=http://new_url --}}
     <script src="{{ asset('js/nav.js') }}"></script>
   </body>
 </html>
