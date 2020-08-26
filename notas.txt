@@ -6,3 +6,7 @@ https://laravel.com/docs/7.x/controllers#resource-controllers
 
 See the routes in our project
 >> php artisan route:list
+
+
+{{-- Keep whitespaces in our text at the moment of showing it --}}
+<p>{!! nl2br(e($post->content)) !!}</p>

@@ -2,8 +2,10 @@
   <a href="{{ route('posts.show', [$post->slug]) }}">
     <h1 class="title">{{ $post->title }}</h1>
   </a>
+  {{-- diffForHumans prints the timestamp in a human-readable format--}}
   <p><b>Posted:</b> {{ $post->created_at->diffForHumans() }}</p>
   <p><b>Category:</b> {{ $post->category }}</p>
+  {{-- Keep whitespaces in our text at the moment of showing it --}}
   <p>{!! nl2br(e($post->content)) !!}</p>
 
   <form method="post" action="{{ route('posts.destroy', [$post->slug]) }}">
