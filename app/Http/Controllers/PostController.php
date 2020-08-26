@@ -115,6 +115,9 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+
+        // Redirect user with a deleted notification
+        return redirect(route('posts.index'))->with('notification', '"' . $post->title .  '" deleted!');
     }
 }
