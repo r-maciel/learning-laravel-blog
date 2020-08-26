@@ -22,6 +22,8 @@ in this case we're taking the route /posts that is related to index method to / 
 Route::get('/', 'PostController@index');
 /* With except you can define which routes you don't want to generate, in this case we don't need a /posts route for index method because we defined / for this method.
 You can list your routes with and without the except to see the difference */
-Route::resource('posts', 'PostController')->except([
+Route::resource('posts', 'PostController');
+
+/*->except([
     'index',
-]);
+]);*/
