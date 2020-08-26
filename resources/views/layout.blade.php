@@ -51,6 +51,7 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-8">
+            {{-- If is a notification sended, print it --}}
             @if (session('notification'))
             <div class="notification is-primary">
               {{ session('notification') }}
