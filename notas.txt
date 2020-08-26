@@ -3,3 +3,6 @@ Here are all the routes generated.
 https://laravel.com/docs/7.x/controllers#resource-controllers
 
 >> php artisan make:model Post -mcr
+
+See the routes in our project
+>> php artisan route:list
