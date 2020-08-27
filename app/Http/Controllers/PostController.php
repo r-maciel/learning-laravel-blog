@@ -104,7 +104,7 @@ class PostController extends Controller
 
         // Redirect the user to the created post woth an updated notification
         /* Send a notification to the view */
-        return redirect(route('posts.index', [$post->slug]))->with('notification', 'Post updated!');
+        return redirect(route('posts.show', [$post->slug]))->with('notification', 'Post updated!');
     }
 
     /**
