@@ -63,7 +63,7 @@
       <div class="content has-text-centered">
         <p>
           <strong>Laravel Blog</strong> |
-          <a href="https://stevencotterill.com">Steven Cotterill</a>
+          <a href="https://stevencotterill.com">By Roberto Maciel</a>
         </p>
       </div>
     </footer>
